@@ -3,20 +3,17 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Hello Azure - Python Quickstart</title>
+    <title>Zero Picking - Coming Soon</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='bootstrap/css/bootstrap.min.css') }}">
     <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
     <style>
         body {
+            margin: 0;
             display: flex;
             align-items: center;
             justify-content: center;
             height: 100vh;
-            margin: 0;
-        }
-
-        main {
-            text-align: center;
+            background-color: #f2f2f2; /* Grey background color */
         }
 
         img.center-image {
@@ -26,22 +23,6 @@
     </style>
 </head>
 <body>
-    <main>
-        <div class="px-4 py-3 my-2 text-center">
-            <img class="center-image" src="{{ url_for('static', filename='pictures/zeropicking.png') }}" alt="Zero Picking" width="192" height="192"/>
-            <h1 class="display-6 fw-bold text-primary">Welcome to Azure</h1>
-        </div>
-        <form method="post" action="{{url_for('hello')}}">
-            <div class="col-md-6 mx-auto text-center">
-                <label for="name" class="form-label fw-bold fs-5">Could you please tell me your name?</label>
-                <div class="d-grid gap-2 d-sm-flex justify-content-sm-center align-items-center my-1">
-                    <input type="text" class="form-control" id="name" name="name" style="max-width: 256px;">
-                </div>
-                <div class="d-grid gap-2 d-sm-flex justify-content-sm-center my-2">
-                    <button type="submit" class="btn btn-primary btn-lg px-4 gap-3">Say Hello</button>
-                </div>
-            </div>
-        </form>
-    </main>
+    <img class="center-image" src="{{ url_for('static', filename='images/zeropicking.png') }}" alt="Zero Picking" width="192" height="192"/>
 </body>
 </html>
